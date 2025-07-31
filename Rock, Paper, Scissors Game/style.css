@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #081b31;
+    color: #ffffff;
+    /* rem(root em) refers to the size compared to root element which is usually <html> */
+    /* em refers to the size compared to the parent element */ 
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice {
+    height: 170px;
+    width: 170px;
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+.choice:active {
+    opacity: 0.5;
+    transform: scale(0.95);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;/*controls alignment along main-axis horizontal usually*/
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    gap: 4rem;
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+}
+
+#msg {
+    display: inline-block;
+    background-color: #081b31;
+    color: #ffffff;
+    margin-top: 3rem;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
